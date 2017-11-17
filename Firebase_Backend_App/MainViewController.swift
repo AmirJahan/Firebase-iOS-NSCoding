@@ -10,6 +10,10 @@ class MainViewController: UIViewController
     @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
     
+    
+    
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -17,10 +21,7 @@ class MainViewController: UIViewController
         
         ReadAll.readData(inpView: self);
         
-        
-        
-        
-        
+       ReadOnlineData.readContinues()
     }
     
     

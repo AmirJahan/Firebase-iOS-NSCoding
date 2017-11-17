@@ -19,8 +19,11 @@
 		29211B361FBB963000406E42 /* DeleteFromCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29211B351FBB963000406E42 /* DeleteFromCloud.swift */; };
 		29211B381FBB96DA00406E42 /* SaveOnCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29211B371FBB96DA00406E42 /* SaveOnCloud.swift */; };
 		29211B3A1FBB977200406E42 /* ReadOnlineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29211B391FBB977200406E42 /* ReadOnlineData.swift */; };
-		29211B3C1FBB9BD700406E42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29211B3B1FBB9BD400406E42 /* GoogleService-Info.plist */; };
+		2963C7961FBEBCA900AF251E /* CompareEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2963C7951FBEBCA900AF251E /* CompareEntries.swift */; };
+		2963C79A1FBEBDC600AF251E /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2963C7991FBEBDC600AF251E /* Convert.swift */; };
+		2963C79C1FBF32B100AF251E /* TestRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2963C79B1FBF32B100AF251E /* TestRead.swift */; };
 		29965E961FBBA7D500D01D09 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29965E951FBBA7D500D01D09 /* MainViewController.swift */; };
+		29CD85EC1FBE109900F1E6A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29CD85EB1FBE106400F1E6A9 /* GoogleService-Info.plist */; };
 		29ED8AC31F630E7E003D804C /* UserClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ED8AC11F630E7E003D804C /* UserClass.swift */; };
 		29EF68C01F62F883002C2332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29EF68BF1F62F883002C2332 /* AppDelegate.swift */; };
 		29EF68C51F62F883002C2332 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29EF68C31F62F883002C2332 /* Main.storyboard */; };
@@ -43,9 +46,12 @@
 		29211B351FBB963000406E42 /* DeleteFromCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFromCloud.swift; sourceTree = "<group>"; };
 		29211B371FBB96DA00406E42 /* SaveOnCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOnCloud.swift; sourceTree = "<group>"; };
 		29211B391FBB977200406E42 /* ReadOnlineData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadOnlineData.swift; sourceTree = "<group>"; };
-		29211B3B1FBB9BD400406E42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2963C7951FBEBCA900AF251E /* CompareEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareEntries.swift; sourceTree = "<group>"; };
+		2963C7991FBEBDC600AF251E /* Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
+		2963C79B1FBF32B100AF251E /* TestRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRead.swift; sourceTree = "<group>"; };
 		29965E951FBBA7D500D01D09 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		29965E971FBBB65600D01D09 /* Firebase_Backend_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Firebase_Backend_App.entitlements; sourceTree = "<group>"; };
+		29CD85EB1FBE106400F1E6A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		29ED8AC11F630E7E003D804C /* UserClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserClass.swift; sourceTree = "<group>"; };
 		29EF68BC1F62F883002C2332 /* Firebase_Backend_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Firebase_Backend_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29EF68BF1F62F883002C2332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,19 +107,22 @@
 		29EF68BE1F62F883002C2332 /* Firebase_Backend_App */ = {
 			isa = PBXGroup;
 			children = (
+				29CD85EB1FBE106400F1E6A9 /* GoogleService-Info.plist */,
 				29965E971FBBB65600D01D09 /* Firebase_Backend_App.entitlements */,
-				29211B3B1FBB9BD400406E42 /* GoogleService-Info.plist */,
 				29EF68BF1F62F883002C2332 /* AppDelegate.swift */,
 				29211B1D1FBB7E0500406E42 /* ReadWrite.swift */,
 				29965E951FBBA7D500D01D09 /* MainViewController.swift */,
+				2963C7991FBEBDC600AF251E /* Convert.swift */,
 				29211B211FBB86D700406E42 /* EntryClass.swift */,
 				29211B231FBB870400406E42 /* WriteViewController.swift */,
 				29ED8AC11F630E7E003D804C /* UserClass.swift */,
 				29EF68D21F62FB70002C2332 /* AppData.swift */,
 				29211B391FBB977200406E42 /* ReadOnlineData.swift */,
+				2963C79B1FBF32B100AF251E /* TestRead.swift */,
 				29211B351FBB963000406E42 /* DeleteFromCloud.swift */,
 				29211B371FBB96DA00406E42 /* SaveOnCloud.swift */,
 				29211B271FBB8D0B00406E42 /* ReadAll.swift */,
+				2963C7951FBEBCA900AF251E /* CompareEntries.swift */,
 				29211B331FBB939900406E42 /* LogoutClass.swift */,
 				29211B311FBB928B00406E42 /* LoginClass.swift */,
 				29211B2D1FBB910A00406E42 /* AlertShow.swift */,
@@ -203,7 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29EF68CA1F62F883002C2332 /* LaunchScreen.storyboard in Resources */,
-				29211B3C1FBB9BD700406E42 /* GoogleService-Info.plist in Resources */,
+				29CD85EC1FBE109900F1E6A9 /* GoogleService-Info.plist in Resources */,
 				29EF68C71F62F883002C2332 /* Assets.xcassets in Resources */,
 				29EF68C51F62F883002C2332 /* Main.storyboard in Resources */,
 			);
@@ -265,10 +274,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				29211B341FBB939900406E42 /* LogoutClass.swift in Sources */,
+				2963C79A1FBEBDC600AF251E /* Convert.swift in Sources */,
 				29211B2E1FBB910B00406E42 /* AlertShow.swift in Sources */,
 				29211B281FBB8D0B00406E42 /* ReadAll.swift in Sources */,
 				29211B221FBB86D700406E42 /* EntryClass.swift in Sources */,
 				29EF68C01F62F883002C2332 /* AppDelegate.swift in Sources */,
+				2963C7961FBEBCA900AF251E /* CompareEntries.swift in Sources */,
 				29211B321FBB928B00406E42 /* LoginClass.swift in Sources */,
 				29211B361FBB963000406E42 /* DeleteFromCloud.swift in Sources */,
 				29965E961FBBA7D500D01D09 /* MainViewController.swift in Sources */,
@@ -278,6 +289,7 @@
 				29211B2C1FBB900100406E42 /* RegisterClass.swift in Sources */,
 				29211B241FBB870400406E42 /* WriteViewController.swift in Sources */,
 				29211B3A1FBB977200406E42 /* ReadOnlineData.swift in Sources */,
+				2963C79C1FBF32B100AF251E /* TestRead.swift in Sources */,
 				29211B1E1FBB7E0500406E42 /* ReadWrite.swift in Sources */,
 				29211B381FBB96DA00406E42 /* SaveOnCloud.swift in Sources */,
 			);

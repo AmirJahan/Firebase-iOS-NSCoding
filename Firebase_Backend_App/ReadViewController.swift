@@ -21,8 +21,6 @@ class ReadViewController: UIViewController, UITableViewDelegate, UITableViewData
         entriesTableView.refreshControl?.addTarget(self,
                                                    action:#selector(refresh),
                                                    for: UIControlEvents.valueChanged)
-        
-        
     }
     
     @objc func refresh ()
@@ -32,7 +30,6 @@ class ReadViewController: UIViewController, UITableViewDelegate, UITableViewData
                                       execute:
             {
                 self.entriesTableView.reloadData();
-                
                 
                 self.entriesTableView.refreshControl?.endRefreshing();
         });
@@ -53,12 +50,25 @@ class ReadViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell;
         
     }
+    
+    
+    
+    
+    
+    
    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         titleLabel.text = AppData.sharedInstance.curEntries[indexPath.row].title;
         bodyTextView.text = AppData.sharedInstance.curEntries[indexPath.row].body;
     }
+    
+    
+    
+    
+    
+    
+    
 
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
     {
@@ -70,6 +80,7 @@ class ReadViewController: UIViewController, UITableViewDelegate, UITableViewData
                    forRowAt indexPath: IndexPath)
     {
         let thisEntry: EntryClass = AppData.sharedInstance.curEntries[indexPath.row];
+        
         AppData.sharedInstance.curEntries.remove(at: indexPath.row);
         DeleteFromCloud.deleteEntry(inpEntry: thisEntry);
         ReadWrite.writeData()

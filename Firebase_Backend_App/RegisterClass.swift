@@ -48,30 +48,40 @@ class RegisterClass: NSObject
     
     class func registerMethod(inpView: UIViewController, inpName: String, inpEmail: String, inpPassword: String)
     {
-        Auth.auth().createUser(withEmail: inpEmail,
-                                               password: inpPassword)
-        { (user, error) in
+        Auth.auth().createUser   (withEmail: inpEmail,
+                               password: inpPassword)
+        { (onlineUser, error) in
             if ( error == nil)
             {
-                let changeRequest = user?.createProfileChangeRequest()
+                let changeRequest = onlineUser?.createProfileChangeRequest()
                 changeRequest?.displayName = inpName
                 
                 changeRequest?.commitChanges(completion:
                     { (profError) in
                         if ( profError == nil)
                         {
-                            AppData.sharedInstance.curUser = UserClass(name: user!.displayName!,
-                                                                       email: user!.email!,
-                                                                       uid: user!.uid);
-
-                            let userDict : [String : String] = ["nameKey": user!.displayName!,
-                                                                "emailKey": user!.email!,
-                                                                "uidKey": user!.uid]
+           
+                            // setting local user
+                            AppData.sharedInstance.curUser = UserClass(name: onlineUser!.displayName!,
+                                                                       email: onlineUser!.email!,
+                                                                       uid: onlineUser!.uid);
                             
-                            AppData.sharedInstance.usersNode.child(user!.uid).setValue(userDict)
+                            
+                            
+                            
+                            
+
+                            let userDict : [String : String] = ["nameKey": onlineUser!.displayName!,
+                                                                "emailKey": onlineUser!.email!,
+                                                                "uidKey": onlineUser!.uid]
+                            
+                            AppData.sharedInstance.usersNode
+                                .child(onlineUser!.uid)
+                                .setValue(userDict)
 
                             ReadWrite.writeUser();
                             
+                       
                             AppData.sharedInstance.offlineEntries = Array<EntryClass>();
                             AppData.sharedInstance.curEntries = Array<EntryClass>();
                             

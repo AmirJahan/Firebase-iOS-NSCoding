@@ -11,12 +11,18 @@ class SaveOnCloud: NSObject
             return
         }
         
+        
+       
+        
         let entryDict = ["titleKey": inpEntry.title,
-                         "bodyKey": inpEntry.body]
+                         "bodyKey": inpEntry.body,
+                         "timeKey": Convert.timeToString(inp:  inpEntry.time),
+                         "uidKey" : inpEntry.uid]
+        
         
         AppData.sharedInstance.dataNode
             .child(AppData.sharedInstance.curUser!.uid)
-            .child(inpEntry.title!)
+            .child(inpEntry.uid)
             .setValue(entryDict)
     }
 }

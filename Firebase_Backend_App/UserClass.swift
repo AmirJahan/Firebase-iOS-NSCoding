@@ -7,12 +7,15 @@ class UserClass: NSObject, NSCoding
     var email: String = "";
     var uid: String = "";
     
+    
     init(name:String,  email:String, uid:String)
     {
         self.name = name;
         self.email = email;
         self.uid = uid;
     }
+    
+
     
     required convenience init?(coder aDecoder: NSCoder)
     {

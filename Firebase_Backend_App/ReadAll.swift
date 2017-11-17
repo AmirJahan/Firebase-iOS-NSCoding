@@ -17,23 +17,30 @@ class ReadAll: NSObject {
             AppData.sharedInstance.curEntries = AppData.sharedInstance.offlineEntries;
         }
 
+        // up until here, it's all offline
+        
+
+        
         // online stuff
         if ( Auth.auth().currentUser != nil)
         {
-            ReadOnlineData.read()
-
+            ReadOnlineData.read() // this takes a whi;e
             
             // combine
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(1),
                                           execute:
+            {
+                AppData.sharedInstance.curEntries =
+                    CompareEntries.compare(inpA: AppData.sharedInstance.offlineEntries,
+                                           inpB: AppData.sharedInstance.onlineEntries)
+                
+                ReadWrite.writeData()
+                
+                for any : EntryClass in AppData.sharedInstance.curEntries
                 {
-                    AppData.sharedInstance.curEntries = AppData.sharedInstance.onlineEntries;
-
+                    SaveOnCloud.save(inpEntry: any)
+                }
             });
-            
-           
-
         }
     }
-
 }

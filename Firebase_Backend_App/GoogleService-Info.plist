@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>295421707649-7kmte2h5ura37q8vqoa827unbfi1c6di.apps.googleusercontent.com</string>
+	<string>320398033845-ft7856j8uar7hgkd6pgjll5r41c1ni18.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.295421707649-7kmte2h5ura37q8vqoa827unbfi1c6di</string>
+	<string>com.googleusercontent.apps.320398033845-ft7856j8uar7hgkd6pgjll5r41c1ni18</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDeFF0Rdr39mjESyYmACByB2Cjrhn6eeRI</string>
+	<string>AIzaSyATWlzG_PVMoDRp7miTVees62PHuHaVOCA</string>
 	<key>GCM_SENDER_ID</key>
-	<string>295421707649</string>
+	<string>320398033845</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>cinard.ca.Firebase-Backend-App</string>
 	<key>PROJECT_ID</key>
-	<string>groceries-bde4c</string>
+	<string>all-tests-ddcb5</string>
 	<key>STORAGE_BUCKET</key>
-	<string>groceries-bde4c.appspot.com</string>
+	<string>all-tests-ddcb5.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:295421707649:ios:5b86d0c29547bcc0</string>
+	<string>1:320398033845:ios:5b86d0c29547bcc0</string>
 	<key>DATABASE_URL</key>
-	<string>https://groceries-bde4c.firebaseio.com</string>
+	<string>https://all-tests-ddcb5.firebaseio.com</string>
 </dict>
 </plist>
