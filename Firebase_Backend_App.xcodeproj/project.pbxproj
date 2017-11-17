@@ -21,7 +21,6 @@
 		29211B3A1FBB977200406E42 /* ReadOnlineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29211B391FBB977200406E42 /* ReadOnlineData.swift */; };
 		2963C7961FBEBCA900AF251E /* CompareEntries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2963C7951FBEBCA900AF251E /* CompareEntries.swift */; };
 		2963C79A1FBEBDC600AF251E /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2963C7991FBEBDC600AF251E /* Convert.swift */; };
-		2963C79C1FBF32B100AF251E /* TestRead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2963C79B1FBF32B100AF251E /* TestRead.swift */; };
 		29965E961FBBA7D500D01D09 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29965E951FBBA7D500D01D09 /* MainViewController.swift */; };
 		29CD85EC1FBE109900F1E6A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29CD85EB1FBE106400F1E6A9 /* GoogleService-Info.plist */; };
 		29ED8AC31F630E7E003D804C /* UserClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ED8AC11F630E7E003D804C /* UserClass.swift */; };
@@ -48,7 +47,6 @@
 		29211B391FBB977200406E42 /* ReadOnlineData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadOnlineData.swift; sourceTree = "<group>"; };
 		2963C7951FBEBCA900AF251E /* CompareEntries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareEntries.swift; sourceTree = "<group>"; };
 		2963C7991FBEBDC600AF251E /* Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
-		2963C79B1FBF32B100AF251E /* TestRead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRead.swift; sourceTree = "<group>"; };
 		29965E951FBBA7D500D01D09 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		29965E971FBBB65600D01D09 /* Firebase_Backend_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Firebase_Backend_App.entitlements; sourceTree = "<group>"; };
 		29CD85EB1FBE106400F1E6A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				29ED8AC11F630E7E003D804C /* UserClass.swift */,
 				29EF68D21F62FB70002C2332 /* AppData.swift */,
 				29211B391FBB977200406E42 /* ReadOnlineData.swift */,
-				2963C79B1FBF32B100AF251E /* TestRead.swift */,
 				29211B351FBB963000406E42 /* DeleteFromCloud.swift */,
 				29211B371FBB96DA00406E42 /* SaveOnCloud.swift */,
 				29211B271FBB8D0B00406E42 /* ReadAll.swift */,
@@ -289,7 +286,6 @@
 				29211B2C1FBB900100406E42 /* RegisterClass.swift in Sources */,
 				29211B241FBB870400406E42 /* WriteViewController.swift in Sources */,
 				29211B3A1FBB977200406E42 /* ReadOnlineData.swift in Sources */,
-				2963C79C1FBF32B100AF251E /* TestRead.swift in Sources */,
 				29211B1E1FBB7E0500406E42 /* ReadWrite.swift in Sources */,
 				29211B381FBB96DA00406E42 /* SaveOnCloud.swift in Sources */,
 			);
